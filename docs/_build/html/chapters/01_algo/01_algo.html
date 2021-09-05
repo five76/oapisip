@@ -9,7 +9,6 @@
     <title>Основы алгоритмизации &#8212; документация oapisip 1</title>
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/classic.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css" />
     
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
@@ -261,6 +260,32 @@
 </dd>
 </dl>
 <p>Составить алгоритм вычисления степенной функции с целым показателем у = х<sup>k</sup>, где к — целое число, не равное 0</p>
+<p><strong>Математическая модель</strong></p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../_images/01_task_va.png"><img alt="asda" src="../../_images/01_task_va.png" style="width: 221.0px; height: 153.0px;" /></a>
+</figure>
+<p>Для данной задачи в качестве подзадачи можно рассматривать возведение числа в целую положительную степень.
+Основной алгоритм будет выглядеть следующим образом:</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../_images/01_ps_va1.png"><img alt="asda" src="../../_images/01_ps_va1.png" style="width: 519.0px; height: 357.0px;" /></a>
+</figure>
+<p>Дважды используется команда обращения к вспомогательному алгоритму с именем СТЕПЕНЬ. Это алгоритм возведения вещественного основания в целую положительную степень путем его многократного перемножения. Величины, стоящие в скобках в команде обращения к вспомогательному алгоритму, называются фактическими параметрами.
+Вспомогательные алгоритмы оформляются в виде процедур. Процедура СТЕПЕНЬ будет выглядеть так:</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../_images/01_ps_va2.png"><img alt="asda" src="../../_images/01_ps_va2.png" style="width: 582.0px; height: 240.0px;" /></a>
+</figure>
+<p>а и k — формальные параметры-аргументы, z — параметр-результат.
+Между формальными и фактическими параметрами процедуры должны выполняться следующие правила соответствия:
+* по количеству (сколько формальных, столько и фактических параметров);
+* по последовательности (первому формальному соответствует первый фактический параметр, второму — второй и т.д.);
+* по типам (типы соответствующих формальных и фактических параметров должны совпадать)</p>
+<p>Обращение к процедуре инициирует следующие действия:</p>
+<ol class="arabic simple">
+<li><p>Значения параметров-аргументов присваиваются соответствующим формальным параметрам.</p></li>
+<li><p>Выполняется тело процедуры (команды внутри процедуры).</p></li>
+<li><p>Значение результата передается соответствующему фактическому параметру, и происходит переход к выполнению следующей команды основного алгоритма.</p></li>
+</ol>
+<p>Использование процедур позволяет строить сложные алгоритмы методом <em>последовательной детализации</em></p>
 <p>asd <span class="math notranslate nohighlight">\(a^2 + b^2 = c^2\)</span></p>
 <div class="math notranslate nohighlight">
 \[ \begin{align}\begin{aligned}(a + b)^2 = a^2 + 2ab + b^2\\\frac{3}{4}\end{aligned}\end{align} \]</div>
