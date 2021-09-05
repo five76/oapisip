@@ -11,7 +11,9 @@ Welcome to oapisip's documentation!
    :caption: Contents:
 
    chapters/01_algo/01_algo.rst
-   chapters/02_langcpp/02_langcpp_intro.rst
+   chapters/02_langcpp/02_langcpp_01_intro.rst
+   chapters/02_langcpp/02_langcpp_02_elem.rst
+   chapters/02_langcpp/02_langcpp_03_type.rst
 
 Indices and tables
 ==================
