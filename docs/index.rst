@@ -15,6 +15,7 @@ Welcome to oapisip's documentation!
    chapters/02_langcpp/02_langcpp_02_elem.rst
    chapters/02_langcpp/02_langcpp_03_type.rst
    chapters/02_langcpp/02_langcpp_04_expr.rst
+   chapters/02_langcpp/02_langcpp_05_progr.rst
 
 Indices and tables
 ==================
