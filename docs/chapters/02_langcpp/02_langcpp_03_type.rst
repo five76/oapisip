@@ -10,7 +10,7 @@
 
 **Схема типов данных**
 
-.. figure:: 02_type_diag.png
+.. figure:: 02_type_diagr.png
        :scale: 100 %
        :align: center
        :alt: asda
