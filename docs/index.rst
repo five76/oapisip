@@ -6,9 +6,11 @@
 Welcome to oapisip's documentation!
 ===================================
 
+
 .. toctree::
    :maxdepth: 3
-   :caption: Contents:
+   :numbered:
+   :hidden:
 
    chapters/01_algo/01_algo.rst
    chapters/02_langcpp/02_langcpp_01_intro.rst
