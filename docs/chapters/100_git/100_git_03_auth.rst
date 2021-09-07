@@ -61,12 +61,12 @@ SSH-агент используется для хранения ключей в 
 Чтобы проверить, всё ли прошло успешно, попробуйте выполнить команду 
 
 ::
-
 	ssh -T git@github.com.
 
 Вывод должен быть таким:
 
 ::
+
 	$ ssh -T git@github.com
 	Hi username! You've successfully authenticated, but GitHub does not provide shell access.
 
