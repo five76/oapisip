@@ -17,6 +17,8 @@ Welcome to oapisip's documentation!
    chapters/02_langcpp/02_langcpp_04_expr.rst
    chapters/02_langcpp/02_langcpp_05_progr.rst
    chapters/100_git/100_git_01_intro.rst
+   chapters/100_git/100_git_02_work.rst
+   chapters/100_git/100_git_03_auth.rst
 
 Indices and tables
 ==================

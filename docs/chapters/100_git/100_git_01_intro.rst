@@ -45,8 +45,8 @@ Git хранит изменения как снимок (snapshot) всего р
 ::
 
 	cd ~
-	mkdir oapisip
-	cd oapisip
+	mkdir -p oapisip/repo
+	cd oapisip/repo
 
 Инициализация репозитория выполняется с помощью команды **git init**:
 
