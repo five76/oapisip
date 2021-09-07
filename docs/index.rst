@@ -7,7 +7,7 @@ Welcome to oapisip's documentation!
 ===================================
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
    :caption: Contents:
 
    chapters/01_algo/01_algo.rst
