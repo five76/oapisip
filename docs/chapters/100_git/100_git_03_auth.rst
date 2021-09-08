@@ -44,19 +44,17 @@ SSH-агент используется для хранения ключей в 
 
 После копирования надо перейти на GitHub. Находясь на любой странице GitHub, в правом верхнем углу нажмите на картинку вашего профиля и в выпадающем списке выберите «Settings». 
 
-.. figure::git_settings.png
+.. figure:: git_settings.png
        :scale: 100 %
        :align: center
        :alt: asda
-
 
 В списке слева надо выбрать поле «SSH and GPG keys». После этого надо нажать «New SSH key» и в поле «Title» написать название ключа (например «Home»), а в поле «Key» вставить содержимое, которое было скопировано из файла ~/.ssh/id_rsa.pub.
 
-.. figure::git_ssh_gpg.png
+.. figure:: git_ssh_gpg.png
        :scale: 100 %
        :align: center
        :alt: asda
-
 
 .. note:: Если GitHub запросит пароль, введите пароль своего аккаунта на GitHub.
 
@@ -69,7 +67,6 @@ SSH-агент используется для хранения ключей в 
 Вывод должен быть таким:
 
 ::
-
 	$ ssh -T git@github.com
 	Hi username! You've successfully authenticated, but GitHub does not provide shell access.
 
