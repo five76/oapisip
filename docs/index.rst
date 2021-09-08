@@ -7,14 +7,8 @@ Welcome to oapisip's documentation!
 ===================================
 
 .. toctree::
-<<<<<<< HEAD
    :maxdepth: 3
    :caption: Contents:
-=======
-   :maxdepth: 2
-   :titlesonly:
-   :includehidden:
->>>>>>> 39b29f26c9f30c233da9fea3b54c5248950e15b3
 
    chapters/01_algo/01_algo.rst
    chapters/02_langcpp/02_langcpp_05_progr.rst
