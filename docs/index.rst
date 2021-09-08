@@ -10,7 +10,7 @@ Welcome to oapisip's documentation!
    :maxdepth: 3
    :caption: Contents:
 
-   chapters/00_preparation/00_01_prep.md
+   chapters/00_preparation/00_01_prep.rst
    chapters/01_algo/01_algo.rst
    chapters/02_langcpp/02_langcpp_01_intro.rst
    chapters/02_langcpp/02_langcpp_05_progr.rst
