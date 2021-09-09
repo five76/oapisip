@@ -269,12 +269,12 @@ Windows: <br>
 Установка CiscoAnyConnect
 """""""""""""""""""""""""""""""""
 
-# Установить программу anyconnect_.
+#. Установить программу anyconnect_.
 
 .. _anyconnect: https://cloud.mail.ru/public/QLCf/2utPKwWXT
 
-# Отключить Брандмауэр
-# Выполнить Пуск->Cisco Connect Secure Mobility Client
+#. Отключить Брандмауэр
+#. Выполнить Пуск->Cisco Connect Secure Mobility Client
 
 .. figure:: vpn_01.png
        :scale: 100 %
