@@ -10,10 +10,10 @@ Welcome to oapisip's documentation!
    :maxdepth: 3
    :caption: Оглавление
 
-   chapters/100_git/100_git_01_intro.rst
-   chapters/01_algo/01_algo.rst
-   chapters/02_langcpp/02_langcpp_01_intro.rst
-   chapters/02_langcpp/02_langcpp_05_progr.rst
+   chapters/100_git/index.rst
+   chapters/01_algo/index.rst
+   chapters/02_langcpp/index.rst
+  
 
 Indices and tables
 ==================
