@@ -269,19 +269,16 @@ Windows: <br>
 Установка CiscoAnyConnect
 """""""""""""""""""""""""""""""""
 
-1. Внешние ссылки выглядят так: ссылка_.
-
-.. _ссылка: http://librerussia.blogspot.ru/
-
-Установить программу anyconnect_.
+# Установить программу anyconnect_.
 
 .. _anyconnect: https://cloud.mail.ru/public/QLCf/2utPKwWXT
 
+# Отключить Брандмауэр
+# Выполнить Пуск->Cisco Connect Secure Mobility Client
 
-Необходимо создать и перейти в катало
-
-.. figure:: git_settings.png
+.. figure:: vpn_01.png
        :scale: 100 %
        :align: center
        :alt: asda
+
 
