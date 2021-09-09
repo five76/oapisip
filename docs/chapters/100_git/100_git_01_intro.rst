@@ -275,7 +275,7 @@ Windows: <br>
 
 Установить программу anyconnect_.
 
-.. _anyconnect:: https://cloud.mail.ru/public/45Yj%2F3pyff69tn/
+.. _anyconnect:: https://cloud.mail.ru/public/45Yj%2F3pyff69tn
 
 
 
