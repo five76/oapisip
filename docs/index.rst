@@ -11,7 +11,6 @@ Welcome to oapisip's documentation!
    :caption: Contents:
 
    chapters/100_git/100_git_01_intro.rst
-   chapters/100_git/100_git_04.rst
    chapters/01_algo/01_algo.rst
    chapters/02_langcpp/02_langcpp_01_intro.rst
    chapters/02_langcpp/02_langcpp_05_progr.rst
