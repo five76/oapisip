@@ -259,6 +259,7 @@ SSH-агент используется для хранения ключей в 
 	$ git commit -m "Commit text"
 	$ git push origin main
 	
+.. rst-class:: page-break
 
 Настройка VPN
 ===============================================================
