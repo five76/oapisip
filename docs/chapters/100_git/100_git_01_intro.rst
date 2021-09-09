@@ -297,6 +297,27 @@ Windows: <br>
        :align: center
        :alt: asda
        
- 9. 
+9. Нажмите **Connect**
+10. В окне Security Warning нажмите **Connect Anyway**
+ 
+.. figure:: vpn_04.png
+       :scale: 100 %
+       :align: center
+       :alt: asda
+       
+11. Введите логин
+ 
+ .. figure:: vpn_05.png
+       :scale: 100 %
+       :align: center
+       :alt: asda
 
+12. Нажмите **Ok**
+13. Введите пароль 
 
+ .. figure:: vpn_05.png
+       :scale: 100 %
+       :align: center
+       :alt: asda
+       
+14. 
