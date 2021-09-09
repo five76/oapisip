@@ -269,16 +269,24 @@ Windows: <br>
 Установка CiscoAnyConnect
 """""""""""""""""""""""""""""""""
 
-#. Установить программу anyconnect_.
-
+1. Установить программу anyconnect_.
 .. _anyconnect: https://cloud.mail.ru/public/QLCf/2utPKwWXT
 
-#. Отключить Брандмауэр
-#. Выполнить Пуск->Cisco Connect Secure Mobility Client
+2. Отключить Брандмауэр
+3. Выполнить Пуск->Cisco Connect Secure Mobility Client
 
 .. figure:: vpn_01.png
        :scale: 100 %
        :align: center
        :alt: asda
+
+4. Открыть окно настроек 
+5. Выбрать закладку Preferences и убрать параметр Block connections to untrasted servers
+
+.. figure:: vpn_02.png
+       :scale: 100 %
+       :align: center
+       :alt: asda
+       
 
 
