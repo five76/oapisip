@@ -4,4 +4,4 @@
 .. toctree::
    :maxdepth: 1
 
-   cpp_02_linprogr
+   cpp_03_linprogr
