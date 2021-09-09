@@ -507,5 +507,6 @@ float->double—>long double
 
 .. toctree::
 
+    02_langcpp_01_intro
     02_langcpp_05_progr
 
