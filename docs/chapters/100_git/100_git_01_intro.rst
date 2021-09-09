@@ -315,7 +315,7 @@ Windows: <br>
 12. Нажмите **Ok**
 13. Введите пароль 
 
- .. figure:: vpn_05.png
+ .. figure:: vpn_06.png
        :scale: 100 %
        :align: center
        :alt: asda
