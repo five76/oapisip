@@ -266,8 +266,8 @@ SSH-агент используется для хранения ключей в 
 Windows: <br>
 Выполняется для подключения к виртуальной машине с установленным программным обеспечением на сервере образователього учреждения
 
-Установка CiscoAnyConnect
-"""""""""""""""""""""""""""""""""
+Установка CiscoAnyConnect и создание подключения
+""""""""""""""""""""""""""""""""""""""""""""""""
 
 1. Установить программу anyconnect_.
 .. _anyconnect: https://cloud.mail.ru/public/QLCf/2utPKwWXT
@@ -315,9 +315,25 @@ Windows: <br>
 12. Нажмите **Ok**
 13. Введите пароль 
 
- .. figure:: vpn_06.png
+.. figure:: vpn_06.png
        :scale: 100 %
        :align: center
        :alt: asda
        
-14. 
+14. Нажмите Ok
+15. **Accept->ConnectAnyway**
+16. Подключение выполнено
+
+.. figure:: vpn_07.png
+       :scale: 100 %
+       :align: center
+       :alt: asda
+       
+17. После подключения окошко сворачивается в трей
+18. Ваш компьютер должен получить адрес из сети 10.10.4.176/27
+19. Win+R->cmd->ipconfig /all
+
+.. figure:: vpn_08.png
+       :scale: 100 %
+       :align: center
+       :alt: asda
