@@ -5,3 +5,4 @@ II. Язык программирования С++
    :maxdepth: 1
 
    02_langcpp_01_intro
+   cpp_02_linprogr/index.rst
