@@ -337,3 +337,14 @@ Windows: <br>
        :scale: 100 %
        :align: center
        :alt: asda
+
+Подключение к стенду
+""""""""""""""""""""
+
+1. Win+R->cmd->mstsc
+2. В окне подключения введите IP адрес своей виртуальной машины: 10.10.4.XXX
+
+.. figure:: vpn_09.png
+       :scale: 100 %
+       :align: center
+       :alt: asda
