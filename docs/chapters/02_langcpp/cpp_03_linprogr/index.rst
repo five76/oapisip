@@ -8,3 +8,4 @@
    cpp_03_math
    cpp_03_thread
    cpp_03_pract
+   cpp_03_sr
