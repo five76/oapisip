@@ -6,3 +6,4 @@ II. Язык программирования С++
 
    02_langcpp_01_intro
    cpp_03_linprogr/index.rst
+   cpp_04_if/index.rst
