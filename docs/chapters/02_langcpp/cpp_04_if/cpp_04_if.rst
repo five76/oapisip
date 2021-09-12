@@ -38,14 +38,14 @@ if (выражение) оператор;
 
 Требуется вычислить функцию sign(x) — знак х,которая определена следующим образом:
 
-.. figure:: 04_if_sign.png
+.. figure:: cpp_04_sign.png
        :scale: 100 %
        :align: center
        :alt: asda
        
 Пример 1. Алгоритм с полными вложенными ветвлениями:
 
-.. figure:: cpp_01.png
+.. figure:: cpp_04_01.png
        :scale: 100 %
        :align: center
        :alt: asda
@@ -62,7 +62,7 @@ if (выражение) оператор;
 
 Пример 2. Алгоритм с полными вложенными ветвлениями:
 
-.. figure:: cpp_02.png
+.. figure:: cpp_04_02.png
        :scale: 100 %
        :align: center
        :alt: asda
@@ -78,7 +78,7 @@ if (выражение) оператор;
 
 Пример 3. Упорядочить по возрастанию значения в двух пере­менных а, b
 
-.. figure:: cpp_03.png
+.. figure:: cpp_04_03.png
        :scale: 100 %
        :align: center
        :alt: asda
