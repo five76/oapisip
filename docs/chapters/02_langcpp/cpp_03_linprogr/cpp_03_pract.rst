@@ -7,7 +7,7 @@
        :scale: 100 %
        :align: center
         
-.. figure:: pract/ex_03.png
+.. figure:: pract/ex_02.png
        :scale: 100 %
        :align: center
           
