@@ -25,18 +25,19 @@ https://code.visualstudio.com/docs/cpp/config-wsl
 3. Установиь **Visual Studio Code** (https://code.visualstudio.com/download)
 4. Установить **Remote - WSL extension** (https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl)
 5. Установить **Windows Subsystem for Linux**
-   
-   * Запустить PowerShell от имени администратора
-   
+* Запустить PowerShell от имени администратора
+
 .. figure:: instvsc/instvsc04.png
         :scale: 100%
         :align: center
-        
-   * Ввести команду 
-   
+
+* Ввести команду 
+
 ::
 
         wsl --install –d Ubuntu-20.04
+        
+
         
 
    
