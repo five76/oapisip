@@ -6,3 +6,4 @@
 
    100_git_01_intro
    100_git_02_vpn
+   installvsc
