@@ -1,5 +1,5 @@
-Установка Visual Studio Code
-===============================
+Установка Visual Studio Code  в Windows
+==========================================
 
 https://code.visualstudio.com/docs/cpp/config-wsl
 
