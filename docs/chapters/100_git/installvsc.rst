@@ -7,7 +7,7 @@ https://code.visualstudio.com/docs/cpp/config-wsl
 
    Выберите Панель управления -> Программы и компоненты -> Включение или отключение компонентов Windows и установите флажок Подсистема Windows для Linux 
 
-.. figure: instvnc/instvnc01.png
+.. figure:: instvnc/instvnc01.png
         :scale: 100%
         :align: center
 
