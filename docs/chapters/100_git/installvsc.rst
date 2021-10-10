@@ -27,3 +27,16 @@ https://code.visualstudio.com/docs/cpp/config-wsl
 5. Установить **Windows Subsystem for Linux**
    
    * Запустить PowerShell от имени администратора
+                
+.. figure:: instvsc/instvsc04.png
+        :scale: 100%
+        :align: center
+        
+   * Ввести команду 
+::
+
+        wsl --install –d Ubuntu-20.04
+        
+
+   
+   
