@@ -1,3 +1,6 @@
+Примеры:
+~~~~~~~~~~
+
 .. code-block:: cpp
 
 	#include<iostream>
