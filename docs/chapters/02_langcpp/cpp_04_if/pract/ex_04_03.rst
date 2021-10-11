@@ -5,9 +5,6 @@
 
 Листинг ex_04_03.cpp
 """"""""""""""""""""""
-
-.. code-block:: cpp
-
 	#include<iostream>
 	#include<cmath>
 
