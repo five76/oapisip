@@ -1,6 +1,8 @@
+.. highlight:: cpp
 
 .. code-block:: cpp
-
+	
+	
 	#include<iostream>
 	#include<cmath>
 
