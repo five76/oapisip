@@ -4,7 +4,7 @@
 .. _ex0403:
 
 Листинг ex_04_03.cpp
-~~~~~~~~~~~~~~~~~~~~~~
+=====================
 
 .. code-block:: cpp
 
@@ -65,3 +65,52 @@
 	  else
 	    cout<<"Точка не принадлежит графику функции"<<endl;
 	}
+
+.. _ex0404:
+
+Листинг ex_04_04.cpp
+=====================
+
+.. code-block:: cpp
+
+        #include <iostream>
+        #include <cmath>
+
+        using namespace std;
+
+        int check_triangle(int R, int a)
+        {
+          int result=0;
+          float r;
+          r = a*1/sqrt(3);
+          if (r<= R)
+            result=1;
+          else
+            result=0;
+
+        return result;
+        }
+
+        int main()
+        {
+          //описание переменных
+          int a;
+          int R;
+          //запрос данных
+          cout<<"\nВведите сторону правильного треугольника"<<endl;
+          cin>>a;
+          cout<<"\nВведите радиус окружности"<<endl;
+          cin>>R;
+          //вывод
+          if (check_triangle(R,a) == 1)
+            cout<<"Поместиться"<<endl;
+          else
+            cout<<"Не поместиться"<<endl;
+        }
+
+
+
+
+
+
+
