@@ -12,12 +12,10 @@
 	  int result=0;
 	  float ff;
 	  ff = a*pow(x,2)+b*x+c;
-	  
 	  if (y-ff==0)
 	    result=1;
 	  else 
 	    result = 0;
-	  
 	  return result;
 	}
 
