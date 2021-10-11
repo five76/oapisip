@@ -1,0 +1,62 @@
+
+::
+
+	#include<iostream>
+	#include<cmath>
+
+	using namespace std;
+
+	int check_point(float a, float b, float c, int x, int y)
+	{
+	  cout<<"Attention!!! check_point is working"<<endl;
+	  int result=0;
+	  float ff;
+	  ff = a*pow(x,2)+b*x+c;
+	  
+	  if (y-ff==0)
+	    result=1;
+	  else 
+	    result = 0;
+	  
+	  return result;
+	}
+
+	int main()
+	{
+	  //Описание переменных
+	  //коэфф кв уравнения
+	  float a;
+	  float b;
+	  float c;
+	  // координаты точки
+	  int m;
+	  int n;
+	  //Дополнительные 
+	  float f;
+	  //************************************
+	  cout<<"Введите кэффициенты квадратного уравнения (a,b,c)"<<endl;
+	  cout<<"\na?"<<endl;
+	  cin>>a;
+	  cout<<"\nb?"<<endl;
+	  cin>>b;
+	  cout<<"\nc?"<<endl;
+	  cin>>c;
+	  cout<<"Введите координаты точки (m.n), для которой проверяется принадлежность графику функции"<<endl;
+	  cout<<"\nm?"<<endl;
+	  cin>>m;
+	  cout<<"\nn?"<<endl;
+	  cin>>n;
+	  //---------------------------------------------------------
+	  // 1 вариант (без использования функции)
+	  f = a*pow(m,2)+b*m+c;
+	  if ((n-f)==0)
+	    cout<<"Точка принадлежит графику функции"<<endl;
+	  else
+	    cout<<"Точка не принадлежит графику функции"<<endl;
+	  //----------------------------------------------------
+	  // 2 вариант (с использованием функции)
+	  if (check_point(a,b,c,m,n) ==1 )
+	    cout<<"Точка принадлежит графику функции"<<endl;
+	  else
+	    cout<<"Точка не принадлежит графику функции"<<endl;
+	}
