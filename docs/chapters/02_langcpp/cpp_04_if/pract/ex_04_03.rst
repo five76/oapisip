@@ -77,7 +77,8 @@
         #include <cmath>
 
         using namespace std;
-
+	
+	//функция проверки треугольника
         int check_triangle(int R, int a)
         {
           int result=0;
@@ -87,10 +88,10 @@
             result=1;
           else
             result=0;
-
-        return result;
+	  return result;
         }
 
+	//основная программа
         int main()
         {
           //описание переменных
@@ -101,11 +102,11 @@
           cin>>a;
           cout<<"\nВведите радиус окружности"<<endl;
           cin>>R;
-          //вывод
+          //проверка условия
           if (check_triangle(R,a) == 1)
-            cout<<"Поместиться"<<endl;
+            cout<<"Треугольник поместится в круг"<<endl;
           else
-            cout<<"Не поместиться"<<endl;
+            cout<<"Треугольник в круг не поместится"<<endl;
         }
 
 
