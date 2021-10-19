@@ -90,7 +90,7 @@
 
 Листинг:
 
-::
+.. code-block:: cpp
 
         #include <iostream>
         #include <ctime>
