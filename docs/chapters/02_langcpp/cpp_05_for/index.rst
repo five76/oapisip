@@ -1,6 +1,10 @@
 Программирование циклов с параметром (FOR)
 ================================================
 
+.. figure:: img/cycle_intro.png
+	:align: center
+	:scale: 100%
+
 .. toctree::
    :maxdepth: 1
 
