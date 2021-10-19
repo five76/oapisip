@@ -1,0 +1,183 @@
+Листинги
+~~~~~~~~~~
+
+.. _ex0401:
+
+Листинг ex_04_01.cpp
+=====================
+
+.. code-block:: cpp
+
+	#include<iostream>
+	#include<cmath>
+
+	using namespace std;
+
+	// Функция для возведения в нужную степень
+	float pow_number(float x)
+	{  
+	  float result=0;
+	  if (x>=0)
+	    result = pow(x,2);
+	  else 
+	    result = pow(x,4);
+	  return result;
+	}
+
+	//основная программа
+	int main()
+	{
+	  int a;
+	  int b;
+	  int c;
+	  //variant 1
+	  //-------------- 
+	  cout<<"\nВведите 1 число"<<endl; //запрос данных
+	  cin>>a;                          // чтение данных в память 
+	  if (a>=0)                        // если значение переменной а больше иили равно 0, 
+	    cout<<pow(a,2);                //тогда печатать квадрат числа а
+	  else                             //иначе
+	    cout<<pow(a,4);                //печатать  числа а в четвертой степени
+	  //------------------------
+	  cout<<"\nВведите 2 число"<<endl;
+	  cin>>b;
+	  if (b>=0)
+	    cout<<pow(b,2);
+	  else
+	    cout<<pow(b,4);
+	  //-------------------------------
+	  cout<<"\nВведите 3 число"<<endl;
+	  cin>>c;
+	  if (c>=0)
+	    cout<<pow(c,2);
+	  else
+	    cout<<pow(c,4);
+
+	  //-------------------------------
+	  // Вариант 2 (с использованием функции)
+	  //-------------- 
+	  cout<<"\nВведите 1 число"<<endl;
+	  cin>>a;
+	  cout<<pow_number(a)<<endl;  
+	  //------------------------
+	  cout<<"\nВведите 2 число"<<endl;
+	  cin>>b;
+	  cout<<pow_number(b)<<endl;  
+	  //------------------------
+	  cout<<"\nВведите 3 число"<<endl;
+	  cin>>c;
+	  cout<<pow_number(c)<<endl;  
+	  //------------------------
+	    return 0;
+	}
+
+
+
+.. _ex0403:
+
+Листинг ex_04_03.cpp
+=====================
+
+.. code-block:: cpp
+
+	#include<iostream>
+	#include<cmath>
+
+	using namespace std;
+
+	int check_point(float a, float b, float c, int x, int y)
+	{
+	  cout<<"Attention!!! check_point is working"<<endl;
+	  int result=0;
+	  float ff;
+	  ff = a*pow(x,2)+b*x+c;
+	  if (y-ff==0)
+	    result=1;
+	  else 
+	    result = 0;
+	  return result;
+	}
+
+	int main()
+	{
+	  //Описание переменных
+	  //коэфф кв уравнения
+	  float a;
+	  float b;
+	  float c;
+	  // координаты точки
+	  int m;
+	  int n;
+	  //Дополнительные 
+	  float f;
+	  //************************************
+	  cout<<"Введите кэффициенты квадратного уравнения (a,b,c)"<<endl;
+	  cout<<"\na?"<<endl;
+	  cin>>a;
+	  cout<<"\nb?"<<endl;
+	  cin>>b;
+	  cout<<"\nc?"<<endl;
+	  cin>>c;
+	  cout<<"Введите координаты точки (m.n), для которой проверяется принадлежность графику функции"<<endl;
+	  cout<<"\nm?"<<endl;
+	  cin>>m;
+	  cout<<"\nn?"<<endl;
+	  cin>>n;
+	  //---------------------------------------------------------
+	  // 1 вариант (без использования функции)
+	  f = a*pow(m,2)+b*m+c;
+	  if ((n-f)==0)
+	    cout<<"Точка принадлежит графику функции"<<endl;
+	  else
+	    cout<<"Точка не принадлежит графику функции"<<endl;
+	  //----------------------------------------------------
+	  // 2 вариант (с использованием функции)
+	  if (check_point(a,b,c,m,n) ==1 )
+	    cout<<"Точка принадлежит графику функции"<<endl;
+	  else
+	    cout<<"Точка не принадлежит графику функции"<<endl;
+	}
+
+.. _ex0404:
+
+Листинг ex_04_04.cpp
+=====================
+
+.. code-block:: cpp
+
+        #include <iostream>
+        #include <cmath>
+
+        using namespace std;
+	
+	//функция проверки треугольника
+        int check_triangle(int R, int a)
+        {
+          int result=0;
+          float r;
+          r = a*1/sqrt(3);
+          if (r<= R)
+            result=1;
+          else
+            result=0;
+	  return result;
+        }
+
+	//основная программа
+        int main()
+        {
+          //описание переменных
+          int a;
+          int R;
+          //запрос данных
+          cout<<"\nВведите сторону правильного треугольника"<<endl;
+          cin>>a;
+          cout<<"\nВведите радиус окружности"<<endl;
+          cin>>R;
+          //проверка условия
+          if (check_triangle(R,a) == 1)
+            cout<<"Треугольник поместится в круг"<<endl;
+          else
+            cout<<"Треугольник в круг не поместится"<<endl;
+        }
+
