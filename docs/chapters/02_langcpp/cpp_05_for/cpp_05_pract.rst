@@ -19,7 +19,7 @@
 
 Например:
 
-..code-block:: cpp
+.. code-block:: cpp
 
         int count_bill(int summa, int bill)
         {
