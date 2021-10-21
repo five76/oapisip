@@ -99,6 +99,57 @@
             cout<<"Выдано купюр по 10 "<<k10<<endl;
         }
 
+
+.. _ex0504:
+        
+Листинг ex_05_04.cpp
+======================
+
+.. code-block:: cpp
+
+        #include <iostream>
+        #include <cmath>
+        using namespace std;
+
+        //Отношение числа к сумме его цифр
+        float check_number(int number)
+        {
+            //cout<<"Working check_number"<<endl;
+            int sot,des,ed;
+            int s; //сумма цифр числа
+            float k=0.0;
+            //Выделение цифр числа
+            sot = number/100;
+            des = (number%100)/10;
+            ed = (number%100)%10;
+            //Сумма цифр
+            s = sot + des + ed;
+            //Отношение
+            k = float(number)/float(s);
+            //cout<<"k = "<<k<<endl;
+        
+            return k;
+        }
+
+        int main ()
+        {
+            float max = 0; //максимальное отношение
+            float temp;
+            int number_max;
+            for (int i=100;i<=999;i++)
+            {
+                temp = check_number(i);
+                if (temp > max) 
+                {
+                    max = temp;
+                    number_max = i;
+                }
+            }
+
+            cout<<"Max = "<<max<<endl;
+            cout<<"Число с максимальным отношением к сумме цифр = "<<number_max<<endl;
+        }
+
 .. _ex0505:
 
 Листинг ex_05_05.cpp
@@ -143,3 +194,4 @@
             cout<<"Количество точек с целочисленными координатами, попавших в круг радиуса"<<R<<endl;
             cout<<"c центорм в точке ("<<x<<","<<y<<") равно "<<calc_points(x,y,R)<<endl;
         }
+

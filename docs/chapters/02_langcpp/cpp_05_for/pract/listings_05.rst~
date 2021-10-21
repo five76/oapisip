@@ -99,46 +99,98 @@
             cout<<"Выдано купюр по 10 "<<k10<<endl;
         }
 
-.. _ex0404:
 
-Листинг ex_04_04.cpp
-=====================
+.. _ex0504:
+        
+Листинг ex_05_04.cpp
+======================
 
 .. code-block:: cpp
 
         #include <iostream>
         #include <cmath>
-
         using namespace std;
-	
-	//функция проверки треугольника
-        int check_triangle(int R, int a)
+
+        //Отношение числа к сумме его цифр
+        float check_number(int number)
         {
-          int result=0;
-          float r;
-          r = a*1/sqrt(3);
-          if (r<= R)
-            result=1;
-          else
-            result=0;
-	  return result;
+            //cout<<"Working check_number"<<endl;
+            int sot,des,ed;
+            int s; //сумма цифр числа
+            float k=0.0;
+            //Выделение цифр числа
+            sot = number/100;
+            des = (number%100)/10;
+            ed = (number%100)%10;
+            //Сумма цифр
+            s = sot + des + ed;
+            //Отношение
+            k = float(number)/float(s);
+            //cout<<"k = "<<k<<endl;
+        
+            return k;
         }
 
-	//основная программа
+        int main ()
+        {
+            float max = 0; //максимальное отношение
+            float temp;
+            int number_max;
+            for (int i=100;i<=999;i++)
+            {
+                temp = check_number(i);
+                if (temp > max) 
+                {
+                    max = temp;
+                    number_max = i;
+                }
+            }
+
+            cout<<"Max = "<<max<<endl;
+            cout<<"Число с максимальным отношением к сумме цифр = "<<number_max<<endl;
+        }
+
+.. _ex0505:
+
+Листинг ex_05_05.cpp
+=====================
+
+.. code-block:: cpp
+
+        #include <iostream>
+        #include<cmath>
+        using namespace std;
+
+        int calc_points(int x, int y, int R)
+        {
+            int k=0;
+            int beg_x = x-R;
+            int end_x = x + R;
+            int beg_y = y-R;
+            int end_y = y + R;
+            for (int n=beg_x; n<=end_x; n++)
+            {
+                for (int m=beg_y; m<=end_y; m++)
+                {
+                    if ((pow(n-x,2) + pow(m-y,2))<=R*R) k++;
+                }
+            }
+            return k;
+        }
+
         int main()
         {
-          //описание переменных
-          int a;
-          int R;
-          //запрос данных
-          cout<<"\nВведите сторону правильного треугольника"<<endl;
-          cin>>a;
-          cout<<"\nВведите радиус окружности"<<endl;
-          cin>>R;
-          //проверка условия
-          if (check_triangle(R,a) == 1)
-            cout<<"Треугольник поместится в круг"<<endl;
-          else
-            cout<<"Треугольник в круг не поместится"<<endl;
+            int x=0;
+            int y=0;
+            int R;
+            cout<<"Введите координаты центра окружности"<<endl;
+            cout<<"x?";
+            cin>>x;
+            cout<<"y?";
+            cin>>y;
+            cout<<"Введите радиус окружности"<<endl;
+            cout<<"R?";
+            cin>>R;
+            cout<<"Количество точек с целочисленными координатами, попавших в круг радиуса"<<R<<endl;
+            cout<<"c центорм в точке ("<<x<<","<<y<<") равно "<<calc_points(x,y,R)<<endl;
         }
-
