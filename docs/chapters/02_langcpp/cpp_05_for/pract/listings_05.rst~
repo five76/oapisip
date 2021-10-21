@@ -99,47 +99,46 @@
             cout<<"Выдано купюр по 10 "<<k10<<endl;
         }
 
-.. _ex0505:
+.. _ex0404:
 
-Листинг ex_05_05.cpp
+Листинг ex_04_04.cpp
 =====================
 
 .. code-block:: cpp
 
         #include <iostream>
-        #include<cmath>
-        using namespace std;
+        #include <cmath>
 
-        int calc_points(int x, int y, int R)
+        using namespace std;
+	
+	//функция проверки треугольника
+        int check_triangle(int R, int a)
         {
-            int k=0;
-            int beg_x = x-R;
-            int end_x = x + R;
-            int beg_y = y-R;
-            int end_y = y + R;
-            for (int n=beg_x; n<=end_x; n++)
-            {
-                for (int m=beg_y; m<=end_y; m++)
-                {
-                    if ((pow(n-x,2) + pow(m-y,2))<=R*R) k++;
-                }
-            }
-            return k;
+          int result=0;
+          float r;
+          r = a*1/sqrt(3);
+          if (r<= R)
+            result=1;
+          else
+            result=0;
+	  return result;
         }
 
+	//основная программа
         int main()
         {
-            int x=0;
-            int y=0;
-            int R;
-            cout<<"Введите координаты центра окружности"<<endl;
-            cout<<"x?";
-            cin>>x;
-            cout<<"y?";
-            cin>>y;
-            cout<<"Введите радиус окружности"<<endl;
-            cout<<"R?";
-            cin>>R;
-            cout<<"Количество точек с целочисленными координатами, попавших в круг радиуса"<<R<<endl;
-            cout<<"c центорм в точке ("<<x<<","<<y<<") равно "<<calc_points(x,y,R)<<endl;
+          //описание переменных
+          int a;
+          int R;
+          //запрос данных
+          cout<<"\nВведите сторону правильного треугольника"<<endl;
+          cin>>a;
+          cout<<"\nВведите радиус окружности"<<endl;
+          cin>>R;
+          //проверка условия
+          if (check_triangle(R,a) == 1)
+            cout<<"Треугольник поместится в круг"<<endl;
+          else
+            cout<<"Треугольник в круг не поместится"<<endl;
         }
+
