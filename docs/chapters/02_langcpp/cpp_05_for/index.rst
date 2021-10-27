@@ -10,4 +10,5 @@
 
    cpp_05_for
    cpp_05_pract
-   pract/listings_05   
+   pract/listings_05
+   cpp_06_while   
