@@ -15,6 +15,8 @@
    :scale: 100%
    :align: center
 
+**Пример_WHILE01**: 
+
 .. code-block:: cpp
 
         #include <iostream>
@@ -41,5 +43,27 @@
 .. figure:: img/06_04.png
    :scale: 100%
    :align: center
-   
-  
+
+**Пример_WHILE02**: Суммирование произвольных чисел, больших 0, вводимых склавиатуы. Выполнение суммирование должно прерваться при вводе отрицательного значения.
+
+.. code-block:: cpp
+
+        #include <iostream>
+        #include <clocale>
+        using namespace std;
+        int main(){
+                setlocale(LC_CTYPE,"rus");
+                float s=0,i;
+                while (true){
+                        cout<<"\nВведите произвольное положительное число: ";
+                        cin>>i;
+                        if (i<0)break;
+                        s+=i; //s=s+1
+                }
+                cout<<"\ns= "<<s<<endl;
+        }
+
+.. note:: Для выхода из бесконечного цикла (условие **true** никогда не станет **false**) используется оператор **break**
+
+
+          
