@@ -139,15 +139,12 @@
 .. code-block:: cpp
 
         #include <iostream>
-        #include <clocale>
         #include <cmath>
         #include <iomanip>
         using namespace std;
         #define pi 3.14 //определяем макропеременную pi
         int main()
-        {
-           
-                setlocale(LC_CTYPE,"rus");
+        {                       
                 const float eps=exp(-7.0); //предел уменьшения члена ряда
                 double xgrad,x,s,u;
                 unsigned int n;
