@@ -121,4 +121,47 @@
 
 	}
 
+.. _ex0603:
+
+Листинг ex_06_03.cpp
+=====================
+
+.. code-block:: cpp
+
+	#include<iostream>
+	#include<cmath>
+	#include<stdio.h>
+	using namespace std;
+
+	//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+	double iter_cycle(double e)
+	{
+	    double S = 0;   // сумма членов ряда
+	    double an;      // член ряда
+	    double n = 1.0;      // номер члена ряда
+	    an = (2.0*n-1)/(pow(2.0,n));
+	    while (an >= e)
+	    {
+		S += an;
+		n++;
+		an = (2.0*n-1)/(pow(2.0,n));
+		//cout<<an<<endl;
+	    }
+	    return S;
+	}
+
+	//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+	int main()
+	{
+	    double e=0.0001;
+	    double res; //переменная для "получения" результатов.
+	    //cout<<"Введите число e"<<endl;
+	    //cin>>e;
+	    res = iter_cycle(e);     //
+	    cout<<"\n"<<res<<endl;
+	    //-----------------------------------
+	}
+	
 
