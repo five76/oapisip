@@ -8,3 +8,4 @@ II. Язык программирования С++
    cpp_03_linprogr/index.rst
    cpp_04_if/index.rst
    cpp_05_for/index.rst
+   cpp_07_func/index.rst

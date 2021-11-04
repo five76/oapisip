@@ -1,0 +1,12 @@
+Программирование циклических алгоритмов
+============================================
+
+.. figure:: img/cycle_intro.png
+	:align: center
+	:scale: 100%
+
+.. toctree::
+   :maxdepth: 1
+
+   cpp_05_for
+   pract/listings_05   
