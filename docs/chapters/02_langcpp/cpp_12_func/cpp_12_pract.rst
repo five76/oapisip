@@ -19,7 +19,7 @@
 
 	double result(float x, float y)
 	{
-	  float f = 0;
+	  double f = 0;
 	  //...
 	  return f;
 	}
@@ -50,7 +50,7 @@
 
 	double calc_number(int x)
 	{
-	  int result = 0;
+	  int result = 1;
 	  //...
 	  return  result;
 	}
@@ -70,7 +70,7 @@
 
 Вычисление результата должно быть выполнено в функции **point_distance**
 
-**Спецификация функции point_dist:**
+**Спецификация функции point_distance:**
 
 * Аргументы (вход): целочисленные значения координат точек x1, y1, x2, y2
 * Выход: вещественное число  (double)
@@ -81,7 +81,7 @@
 	#include<iostream>
 	//#include...
 
-	double point_dist(int x1,int y1, int x2, int y2)
+	double point_distance(int x1,int y1, int x2, int y2)
 	{
 	  double result=0;
 	  //...
@@ -99,13 +99,14 @@
 ''''''''''''''''''''''''''''
 
 Дана длина ребра куба. Найти площади грани, полной поверхности и объем этого куба. Вычисления должны быть выполнены в функциях:
+
 * грань - cub_edge
 * поверхность - cub_surf
 * объем - cub_vol
 
 **Спецификация функций:**
 
-* Аргументы (вход): целочисленное значения длины ребра куба l
+* Аргументы (вход): целочисленное значения длины ребра куба len
 * Выход: вещественное число  (double)
 * Пояснения: 
 
@@ -115,18 +116,24 @@
 	#include<iostream>
 	//...
 
-	double cub_edge(int l)
+	double cub_edge(int len)
 	{
+	  double result = 0;
+	  //...
 	  return result;
 	}
 
-	double cub_surf(int l)
+	double cub_surf(int len)
 	{
+	  double result = 0;
+	  //...
 	  return result;
 	}
 
-	double cub_vol(int l)
+	double cub_vol(int len)
 	{
+	  double result = 0;
+	  //...
 	  return result;
 	}
 
