@@ -5,34 +5,9 @@
 
 Фун­кция является основной программной единицей в Си, минималь­ным исполняемым программным модулем. Всякая программа обязательно включает в себя основную функцию с именем **main**. Если в программе используются и другие функции, то они вы­полняют роль подпрограмм. Рассмотрим пример. Требуется составить программу нахожде­ния наибольшего значения из трех величин — max (a, Ь, с). Для ее решения можно использовать вспомогательный алгоритм нахож­дения максимального значения из двух, поскольку справедливо равенство: max (a, b, с) = max (max (a, b), с):
 
-.. code-block:: cpp
-
-	#include <iostream>
-	using namespace std;
-
-	//Определение вспомогательной функции
-	int MAX(int x, int y)
-	{ 
-	    if (x>y) 
-	    {
-		return x;
-	    }
-	else 
-	    {
-		return y;
-	    }
-	}
-
-	//Основная функция
-	int main()
-	{
-	    int a,b,c,d;
-	    cout<<"Bведите a,b,c:";
-	    cin>>a>>b>>c;
-	    d=MAX(MAX(a,b),c);
-	    cout<<"\nmax (a, b, c) = "<<d<<endl;
-	    return 0;
-	}
+.. figure:: img/max.png
+	:align: center
+	:scale: 100%
 
 Формат определения функции
 """"""""""""""""""""""""""""""
@@ -79,39 +54,11 @@
 
 Полное определение функции **МАХ ()** перед основной частью программы необязательно. Вот другой вариант программы, решающей ту же самую задачу.
 
-*Листинг max.cpp*:
+*Листинг maxproto.cpp*:
 
-.. code-block:: cpp
-
-	#include <iostream>
-	using namespace std;
-
-	//Прототип функции МАХ
-	int MAX(int, int);
-
-	//Основная функция
-	int main()
-	{
-	    int a,b,c,d;
-	    cout<<"Bведите a,b,c:";
-	    cin>>a>>b>>c;
-	    d=MAX(MAX(a,b),c);
-	    cout<<"\nmax (a, b, c) = "<<d ;
-	    return 0;
-	}
-
-	//Определение вспомогательной функции
-	int MAX(int x, int y)
-	{ 
-	    if (x>y) 
-	    {
-		return x;
-	    }
-	else 
-	    {
-		return y;
-	    }
-	}
+.. figure:: img/maxproto.png
+	:align: center
+	:scale: 100%
 	
 Мож­но было написать и так, как в заголовке определения функции: int MAX(int x, int у); 
 
@@ -125,26 +72,10 @@
 
 *Листинг: line.cpp* 
 
-.. code-block:: cpp
+.. figure:: img/line.png
+	:align: center
+	:scale: 100%
 
-	#include <iostream>
-	using namespace std;
-
-	//Прототип функции line
-	void line(void);
-
-	//Основная функция
-	int main()
-	{ 
-	    line (); //Вызов функции line
-	    return 0;
-	}
-	//Определение функции line
-	void line(void)
-	{ 
-	    int i;
-	    for(i=0; i<80; i++) cout<<"*";
-	}
 	
 В данной программе приводится пример использования функции, которая не имеет параметров и не возвращает никаких значений в точку вызова.
 
@@ -174,51 +105,10 @@
 
 *Листинг quadr.cpp*
 
-.. code-block:: cpp
+.. figure:: img/quadr.png
+	:align: center
+	:scale: 100%
 
-	//Площадь выпуклого четырехугольника
-	#include <iostream>
-	#include <math.h>
-	using namespace std;
-
-	typedef double D; //Переименование типа double
-
-	D Line(D,D,D,D); //Прототип функции Line
-	D Geron(D,D,D,D,D,D); // Прототип функции Geron
-
-	//Основная функция
-	int main()
-	{ 
-	    D x1,y1,x2,y2,x3,y3,x4,y4,S1234;
-	    cout<<"x1="; cin>>x1; 
-	    cout<<"y1="; cin>>y1;
-	    cout<<"x2="; cin>>x2;
-	    cout<<"y2="; cin>>y2;
-	    cout<<"x3="; cin>>x3;
-	    cout<<"y3="; cin>>y3;
-	    cout<<"x4 = "; cin>>x4;
-	    cout<<"y4 = "; cin>>y4;
-	    S1234=Geron(x1,y1,x2,y2,x3,y3)+Geron(x1,y1,x3,y3,x4,y4);
-	    cout<<"Плoщaдь четырехугольника="<<S1234;
-	    return 0;
-	}
-
-	//Определение функции Line
-	D Line(D a,D b,D c,D d)
-	{
-	    return sqrt((a-c)*(a-c)+(b-d)*(b-d));
-	}
-
-	//Определение функции Geron
-	D Geron(D a1,D a2,D b1,D b2,D c1,D c2)
-	{
-	    D p,ab,bc,ca;
-	    ab=Line(a1,a2,b1,b2); 
-	    bc=Line(b1,b2,c1,c2);
-	    ca=Line(c1,c2,a1,a2);
-	    p=(ab+bc+ca)/2;
-	    return sqrt(p*(p-ab)*(p-bc)*(p-ca));
-	}
 
 В этой программе используются функции из трех стандартных библиотек с заголовочными файлами **iostream**, **math.h**
 
