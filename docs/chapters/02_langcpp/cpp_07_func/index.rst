@@ -8,6 +8,6 @@
 .. toctree::
    :maxdepth: 1
 
-   cpp_07_funct_png
+   cpp_07_func_png
    cpp_07_pract
    pract/listings_07
