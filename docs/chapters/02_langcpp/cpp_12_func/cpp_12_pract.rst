@@ -200,7 +200,7 @@ root_x2:
 
 **Математическая модель:**
 
-.. fugure:: img/ex_12_06_model.png
+.. figure:: img/ex_12_06_model.png
 	:align: center
 	:scale: 100%
 	
