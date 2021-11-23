@@ -1,6 +1,10 @@
 II. Язык программирования С++
 ################################
 
+.. figure:: oapisip.png
+	:scale: 100%
+	:align: center
+
 .. toctree::
    :maxdepth: 1
 
@@ -9,5 +13,4 @@ II. Язык программирования С++
    cpp_04_if/index.rst
    cpp_05_for/index.rst
    cpp_12_func/index.rst
-   ansible/index.rst
    
