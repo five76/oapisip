@@ -4,6 +4,12 @@ II. Язык программирования С++
 .. figure:: oapisip.png
 	:scale: 100%
 	:align: center
+	
+	
+.. figure:: oapisip101221.png
+	:scale: 100%
+	:align: center
+
 
 .. toctree::
    :maxdepth: 1
