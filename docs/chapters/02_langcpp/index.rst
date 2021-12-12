@@ -9,7 +9,10 @@ II. Язык программирования С++
 .. figure:: oapisip101221.png
 	:scale: 100%
 	:align: center
-
+	
+.. figure:: oapisip121221.png
+	:scale: 100%
+	:align: center
 
 .. toctree::
    :maxdepth: 1
