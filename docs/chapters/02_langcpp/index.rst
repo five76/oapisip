@@ -1,12 +1,11 @@
 II. Язык программирования С++
 ################################
-
-.. figure:: oapisip.png
+	
+.. figure:: oapisip231221.png
 	:scale: 100%
 	:align: center
-	
-	
-.. figure:: oapisip101221.png
+
+.. figure:: oapisip171221.png
 	:scale: 100%
 	:align: center
 	
@@ -14,17 +13,14 @@ II. Язык программирования С++
 	:scale: 100%
 	:align: center
 	
-	
-.. figure:: oapisip171221.png
+.. figure:: oapisip101221.png
 	:scale: 100%
 	:align: center
-
 	
-.. figure:: oapisip231221.png
+.. figure:: oapisip.png
 	:scale: 100%
 	:align: center
-
-
+	
 .. toctree::
    :maxdepth: 1
 
