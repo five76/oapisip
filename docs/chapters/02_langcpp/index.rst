@@ -19,6 +19,11 @@ II. Язык программирования С++
 	:scale: 100%
 	:align: center
 
+	
+.. figure:: oapisip231221.png
+	:scale: 100%
+	:align: center
+
 
 .. toctree::
    :maxdepth: 1
