@@ -1,6 +1,10 @@
 II. Язык программирования С++
 ################################
 	
+.. figure:: oapisip281221.png
+	:scale: 100%
+	:align: center
+	
 .. figure:: oapisip231221.png
 	:scale: 100%
 	:align: center
