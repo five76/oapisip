@@ -33,4 +33,5 @@ II. Язык программирования С++
    cpp_04_if/index.rst
    cpp_05_for/index.rst
    cpp_12_func/index.rst
+   cpp_07_array/index.rst
    
