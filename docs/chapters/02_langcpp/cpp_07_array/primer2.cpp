@@ -19,4 +19,5 @@ int main()
     //cout<<"A["<<i<<"]="<<A[i]<<endl;
     cout<<SUM<<endl;
     cout<<SA<<endl;
+    cout<<"Random"<<rand()<<" "<<RAND_MAX<<endl;
 }
