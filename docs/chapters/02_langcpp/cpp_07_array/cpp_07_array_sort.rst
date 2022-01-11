@@ -272,3 +272,13 @@ Cортировку следует понимать как процесс пер
 
 **clock_t** способный представлять временные такты, а также поддерживает арифметические операции.
 
+Дополнительные материалы:
+
+https://javarush.ru/groups/posts/1997-algoritmih-sortirovki-v-teorii-i-na-praktike
+
+https://infostart.ru/1c/articles/204320/
+
+https://academy.yandex.ru/posts/osnovnye-vidy-sortirovok-i-primery-ikh-realizatsii
+
+https://habr.com/ru/post/335920/
+
