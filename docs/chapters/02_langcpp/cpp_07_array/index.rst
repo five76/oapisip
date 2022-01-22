@@ -10,4 +10,5 @@
    :maxdepth: 1
 
    cpp_07_array
+   cpp_07_array_ptr
    cpp_07_array_sort
