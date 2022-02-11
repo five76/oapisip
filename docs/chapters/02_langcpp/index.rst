@@ -15,4 +15,5 @@ II. Язык программирования С++
    cpp_05_for/index.rst
    cpp_12_func/index.rst
    cpp_07_array/index.rst
+   cpp_08_array2/index.rst
    
