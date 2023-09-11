@@ -10,4 +10,3 @@
 
    cpp_12_func_png
    cpp_12_pract
-   pract/listings_12
