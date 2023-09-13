@@ -3,6 +3,10 @@
 
 https://code.visualstudio.com/docs/cpp/config-wsl
 
+0. Установиь **Visual Studio Code** (https://code.visualstudio.com/download)
+
+   Установить **Remote - WSL extension** (https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl)
+
 1.	Установить Дополнительный компонент "Подсистема Windows для Linux" 
 
 Выбрать **Панель управления** -> **Программы и компоненты** -> **Включение или отключение компонентов Windows** и установите флажок **Подсистема Windows для Linux**
@@ -22,9 +26,29 @@ https://code.visualstudio.com/docs/cpp/config-wsl
         :align: center
         
 2. Перезагрузить компьютер
-3. Установиь **Visual Studio Code** (https://code.visualstudio.com/download)
-4. Установить **Remote - WSL extension** (https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl)
-5. Установить **Windows Subsystem for Linux**
+
+3. Открыть PowerShell с правами администратора
+
+3.1) Ввести команды
+
+::
+
+        dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+        
+        dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+
+   
+3.2) Перезагрузить компьютер 
+
+4. Cкачать и установить WSL2 (https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi)
+
+5.  Установить WSL 2 в качестве версии WSL, используемой по умолчанию при установке новых дистрибутивов Linux.
+
+::
+
+        wsl --set-default-version 2
+
+5.1 Установить **Windows Subsystem for Linux**
 
 * Запустить PowerShell от имени администратора
 
@@ -66,7 +90,7 @@ https://code.visualstudio.com/docs/cpp/config-wsl
 ::
 
         sudo apt-get install build-essential gdb
-        
+   
 9. Настроить **git**
 
 .. figure:: instvsc/gitname.png
