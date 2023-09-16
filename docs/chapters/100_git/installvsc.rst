@@ -1,97 +1,22 @@
 Установка Visual Studio Code  в Windows
 ==========================================
 
-https://code.visualstudio.com/docs/cpp/config-wsl
+1. Выполнить инструкцию, представленную на странице
 
-0. Установиь **Visual Studio Code** (https://code.visualstudio.com/download)
+https://code.visualstudio.com/docs/cpp/config-mingw
 
-   Установить **Remote - WSL extension** (https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl)
+2. Установить и настроить **git**
 
-1.	Установить Дополнительный компонент "Подсистема Windows для Linux" 
+2.1) Скачать и установить git
 
-Выбрать **Панель управления** -> **Программы и компоненты** -> **Включение или отключение компонентов Windows** и установите флажок **Подсистема Windows для Linux**
+https://git-scm.com/download/win
 
-.. figure:: instvsc/instvsc01.png
-        :scale: 100%
-        :align: center
+2.2) Добавить путь к git.exe в системную переменную PATH
+
+https://www.delftstack.com/howto/git/add-git-to-path-on-windows/#manually-add-git-to-the-path-on-windows
 
 
-.. figure:: instvsc/instvsc02.png
-        :scale: 100%
-        :align: center
-        
-        
-.. figure:: instvsc/instvsc03.png
-        :scale: 100%
-        :align: center
-        
-2. Перезагрузить компьютер
 
-3. Открыть PowerShell с правами администратора
-
-3.1) Ввести команды
-
-::
-
-        dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
-        
-        dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
-
-   
-3.2) Перезагрузить компьютер 
-
-4. Cкачать и установить WSL2 (https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi)
-
-5.  Установить WSL 2 в качестве версии WSL, используемой по умолчанию при установке новых дистрибутивов Linux.
-
-::
-
-        wsl --set-default-version 2
-
-5.1 Установить **Windows Subsystem for Linux**
-
-* Запустить PowerShell от имени администратора
-
-.. figure:: instvsc/instvsc04.png
-        :scale: 100%
-        :align: center
-
-* Ввести команду 
-
-::
-
-        wsl --install –d Ubuntu-20.04
-        
-.. figure:: instvsc/instvsc05.png
-        :scale: 100%
-        :align: center
-
-.. note:: Просмотр доступных ОС (**wsl --list --online** или **wsl -l -o**)
-
-6. Открыть **Bash shell for WSL** (при установке запустится самостоятельно)
-
-.. figure:: instvsc/instvsc06.png
-        :scale: 100%
-        :align: center
-
-При запросе создать пользователя
-
-* Login: student
-* Password: <придумать>
-
-7. Обновить систему
-
-::
-
-        sudo apt-get update
-        
-8. Установить отладчик gdb
-
-::
-
-        sudo apt-get install build-essential gdb
-   
-9. Настроить **git**
 
 .. figure:: instvsc/gitname.png
         :scale: 100%
