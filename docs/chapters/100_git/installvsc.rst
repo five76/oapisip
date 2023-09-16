@@ -79,6 +79,11 @@ code .
         #include<iostream>
         #include<cmath>
 
+
+.. figure:: git_11.png
+        :scale: 100%
+        :align: center
+
 19. Сохранить (Ctrl+S)
 
 20. Отправить изменения на github
