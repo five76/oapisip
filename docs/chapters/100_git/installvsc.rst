@@ -33,6 +33,7 @@ https://www.delftstack.com/howto/git/add-git-to-path-on-windows/#manually-add-gi
 5. Сгенерировать ключ доступа по SSH для вашей ОС
 
 5.1) Запустить GitBash 
+
 5.2) Ввести команду
 
 .. figure:: instvsc/ssh-keygen.png
@@ -66,7 +67,9 @@ code .
 9. Склонировать в данный каталог свой репозиторий:
 
 9.1) В окне **Welcome** (Help->Welcome) выбрать **Clone Git Repository** 
+
 9.2) В командной строке вписать **git@github.com:five76/isip20_XX.git** (XX - ваш номер)
+
 9.3) Подтвердить клонирование кликом мыши
 
 
@@ -91,7 +94,9 @@ code .
 13. Отправить изменения на github
 
 13.1) Нажать кнопку  **Source Control** (рис.1, 12)
+
 13.2) В поле **Commit** ввести текст **Update task_03_01.cpp** (рис. 2, 13)
+
 13.3) Выбрать команду **Commit & Sync** (рис. 2, 14)
 
 .. figure:: git_14.png
