@@ -30,7 +30,9 @@ https://www.delftstack.com/howto/git/add-git-to-path-on-windows/#manually-add-gi
         :scale: 100%
         :align: center
 
-5. Сгенерировать ключ доступа по SSH для вашей ОС
+5. Сгенерировать ключ доступа по SSH для вашей ОС. 
+
+Добавление ключа позволить скачивать и обновлять содержимое репозитория без ввода паролей.
 
 5.1) Запустить GitBash 
 
@@ -75,7 +77,7 @@ code .
 
 10. Открыть каталог **oapisip/isip20_XX/exercises/03_linprogr/home**
        
-11. Вписать в task_03_01.cpp (рис.1 п.11)
+11. Вписать в task_03_01.cpp (рис.1, 11)
 
 ::
 
