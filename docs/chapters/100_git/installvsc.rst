@@ -72,7 +72,7 @@ code .
 
 10. Открыть каталог **oapisip/isip20_XX/exercises/03_linprogr/home**
        
-11. Вписать в task_03_01.cpp
+11. Вписать в task_03_01.cpp (рис.1 п.11)
 
 ::
 
@@ -84,16 +84,15 @@ code .
         :scale: 100%
         :align: center
 
-19. Сохранить (Ctrl+S)
+Рис. 1
 
-20. Отправить изменения на github
+12. Сохранить (Ctrl+S)
 
-::
+13. Отправить изменения на github
 
+13.1) Нажать кнопку  **Source Control** (рис.1, 12)
+13.2) 
 
-        git add .
-        git commit -m “Update task_03_01.cpp”
-        git push origin main
 
 .. note:: Для скачивания имеющихся обновлений с github в свой локальный репозиторий: **git pull**
 
