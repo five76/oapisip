@@ -112,13 +112,13 @@ code .
 
 .. figure:: git_15.png
         :scale: 100%
-        :align: center
+        :align: left
 
 Рис. 3
 
 .. figure:: git_16.png
         :scale: 100%
-        :align: center
+        :align: left
 
 Рис. 4
 
