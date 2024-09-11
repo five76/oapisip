@@ -7,7 +7,7 @@ Welcome to oapisip's documentation!
 ===================================
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 2
    :caption: Оглавление
 
    chapters/100_git/index.rst
